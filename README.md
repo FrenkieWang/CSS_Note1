@@ -70,7 +70,7 @@
 
 
 `margin: auto;`不是控制元素居中的最佳方法，
-请看下面章节 的 [#Flex布局](#custom-anchor-id)
+请看下面章节 的 [#Flex布局](#flex-layout)
 
 
 # 脱离文档流--Position
