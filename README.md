@@ -24,12 +24,10 @@
 
 # 内边距(Padding) 和 外边距(Margin)
 
-在CSS中，`padding`和`margin`用来控制元素间的空间关系，达到预期的布局效果。
+在CSS中，**`padding`**和**`margin`**用来控制元素间的空间关系，达到预期的布局效果。
 
-`padding`用于控制元素内容与其边界的距离，增强可读性和美观性。
-`margin`常用于控制元素之间的空间，实现布局分隔和元素对齐。
-
-`padding`和`margin`是两个处理元素间距的重要属性，但它们应用的范围和方式有所不同：
+**`padding`**用于控制元素内容与其边界的距离，增强可读性和美观性。
+**`margin`**常用于控制元素之间的空间，实现布局分隔和元素对齐。
 
 ### Padding（内边距）
 - `padding`指的是元素内容与其边框之间的空间。
@@ -58,14 +56,13 @@
 
 ### 设置居中的方法 - `margin: auto;`
 
-`margin: auto;` 能够在某些情况下实现子元素在父元素中的水平居中，主要是因为当元素的`margin`设置为`auto`时，浏览器会自动计算并分配等量的空间到元素的两边，从而实现居中效果：
+**`margin: auto;`** 能够在某些情况下实现子元素在父元素中的水平居中，主要是因为当元素的`margin`设置为`auto`时，浏览器会自动计算并分配等量的空间到元素的两边，从而实现居中效果：
 
 1. **水平居中**：当一个块级元素（如`div`）的左右`margin`被设置为`auto`，并且该元素有一个固定的宽度时，浏览器会尝试为左右`margin`分配相等的空间，从而使得元素在水平方向上居中于其父元素。这是因为`margin: auto;`会使得元素尝试占据所有可用的水平空间，但由于元素宽度固定，剩余的空间会被均匀分配到左右两侧的`margin`中。
 2. **垂直居中**：纯粹使用`margin: auto;`来实现垂直居中是有限制的，它通常需要与其他CSS属性配合使用（如在一个绝对定位的元素中设置`top: 0; bottom: 0; margin: auto;`可以实现垂直居中）。仅仅使用`margin: auto;`并不能直接实现垂直居中，因为在标准文档流中，垂直方向的`margin`不会自动分配空间来实现居中。
 3. **块级元素**：`margin: auto;`主要适用于块级元素。对于内联元素，`margin: auto;`不会产生居中效果，因为内联元素不响应垂直方向的`margin`设置。
 4. **宽度**：为了使`margin: auto;`有效，元素不能是自然流动宽度（即，它不能是`width: auto;`或占满整个父容器的宽度）。元素需要有一个设置了具体值的`width`属性或者以其他方式限制了宽度，以便浏览器能计算出需要分配给`margin`的空间。
 5. **父元素宽度**：`margin: auto;`使元素居中的效果依赖于父元素有足够的宽度。如果父元素宽度不够，即使设置了`margin: auto;`，元素也无法正确居中。
-
 
 `margin: auto;`不是控制元素居中的最佳方法，
 请看下面章节 的 [#Flex布局](#flex-layout)
@@ -74,7 +71,7 @@
 
 # 脱离文档流 -- 修改Position
 
-CSS 中的 `position` 属性用于指定元素的定位方式，包括 `static`、`relative`、`absolute`、`fixed` 和 `sticky`。默认值是 `static`。
+CSS 中的 **`position`** 属性用于指定元素的定位方式，包括 `static`、`relative`、`absolute`、`fixed` 和 `sticky`。默认值是 `static`。
 
 ### `position: static`
 
@@ -112,11 +109,11 @@ CSS 中的 `position` 属性用于指定元素的定位方式，包括 `static`�
 <a id="flex-layout"></a>
 # Flex布局 -- display: flex;  
 
-Flexbox 是 CSS 的一种布局模式，旨在提供一种更有效的方式来布置、对齐和分布容器内的项，即使它们的大小未知或动态变化。Flexbox 使复杂的布局变得简单，对于响应式设计尤其有用。
+**`display: flex`** 是 CSS 的一种布局模式，旨在提供一种更有效的方式来布置、对齐和分布容器内的项，即使它们的大小未知或动态变化。
 
 ### `flex-direction`
 
-`flex-direction` 属性决定了 Flex 容器内主轴（main axis）的方向。主轴的方向决定了 Flex 项是如何在 Flex 容器中排列的。`flex-direction` 可以有以下值：
+**`flex-direction`** 属性决定了 Flex 容器内主轴（main axis）的方向。主轴的方向决定了 Flex 项是如何在 Flex 容器中排列的。`flex-direction` 可以有以下值：
 
 - **`row`**（默认）: Flex 项沿水平方向，从左到右排列（在LTR语言模式下）。
 - **`row-reverse`**: Flex 项沿水平方向，但是从右到左排列。
@@ -125,7 +122,7 @@ Flexbox 是 CSS 的一种布局模式，旨在提供一种更有效的方式来�
 
 ### `justify-content`
 
-`justify-content` 属性定义了 Flex 项沿主轴的对齐方式。这个属性可以帮助分配 Flex 项之间以及容器内部的空白空间。`justify-content` 的常用值包括：
+**`justify-content`** 属性定义了 Flex 项沿主轴的对齐方式。这个属性可以帮助分配 Flex 项之间以及容器内部的空白空间。`justify-content` 的常用值包括：
 
 - **`flex-start`**（默认）: Flex 项排列在容器的开始端。
 - **`flex-end`**: Flex 项排列在容器的结束端。
@@ -136,7 +133,7 @@ Flexbox 是 CSS 的一种布局模式，旨在提供一种更有效的方式来�
 
 ### `align-items`
 
-`align-items` 属性定义了 Flex 项沿交叉轴的对齐方式。交叉轴垂直于主轴。`align-items` 的作用是解决 Flex 项在容器的交叉轴方向上应该如何对齐的问题。常用的值包括：
+**`align-items`** 属性定义了 Flex 项沿交叉轴的对齐方式。交叉轴垂直于主轴。`align-items` 的作用是解决 Flex 项在容器的交叉轴方向上应该如何对齐的问题。常用的值包括：
 
 - **`stretch`**（默认）: Flex 项被拉伸以填满容器的交叉轴，但也可以被其内容的高度或设定的高度所限制。
 - **`flex-start`**: Flex 项沿交叉轴的起点对齐。
