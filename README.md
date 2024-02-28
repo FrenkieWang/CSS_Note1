@@ -105,7 +105,7 @@ CSS 中的 **`position`** 属性用于指定元素的定位方式，包括 `stat
 
 **`flex-direction`** 属性决定了 Flex 容器内主轴（main axis）的方向。主轴的方向决定了 Flex 项是如何在 Flex 容器中排列的。`flex-direction` 可以有以下值：
 
-- **`row`**（默认）: Flex 项沿水平方向，从左到右排列（在LTR语言模式下）。
+- **`row`**（默认）: Flex 项沿水平方向，从左到右排列。
 - **`row-reverse`**: Flex 项沿水平方向，但是从右到左排列。
 - **`column`**: Flex 项沿垂直方向，从上到下排列。
 - **`column-reverse`**: Flex 项沿垂直方向，但是从下到上排列。
