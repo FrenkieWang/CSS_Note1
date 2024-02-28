@@ -72,7 +72,7 @@
 
 
 
-# 脱离文档流--Position
+# 脱离文档流 -- 修改Position
 
 CSS 中的 `position` 属性用于指定元素的定位方式，包括 `static`、`relative`、`absolute`、`fixed` 和 `sticky`。默认值是 `static`。
 
@@ -110,7 +110,7 @@ CSS 中的 `position` 属性用于指定元素的定位方式，包括 `static`�
   
 
 <a id="flex-layout"></a>
-# Flex布局
+# Flex布局 -- display: flex;  
 
 Flexbox 是 CSS 的一种布局模式，旨在提供一种更有效的方式来布置、对齐和分布容器内的项，即使它们的大小未知或动态变化。Flexbox 使复杂的布局变得简单，对于响应式设计尤其有用。
 
