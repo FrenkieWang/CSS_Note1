@@ -99,7 +99,7 @@ CSS 中的 **`position`** 属性用于指定元素的定位方式，包括 `stat
 <a id="flex-layout"></a>
 # Flex布局 -- display: flex;  
 
-**`display: flex`** 是 CSS 的一种布局模式，旨在提供一种更有效的方式来布置、对齐和分布容器内的项，即使它们的大小未知或动态变化。
+**`display: flex;`** 是 CSS 的一种布局模式，旨在提供一种更有效的方式来布置、对齐和分布容器内的项，即使它们的大小未知或动态变化。
 
 ### `flex-direction`
 
